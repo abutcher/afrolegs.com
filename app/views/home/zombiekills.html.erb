@@ -1,0 +1,18 @@
+<div class="container"%>
+<h2>Zombie Kills</h2>
+
+<table class="table-striped" width="100%" cellpadding="10">
+  <tr>
+    <td><b>Player Name</b></td>
+    <td><b>Zombie Kills</b></td>
+  </tr>
+  <% if @zombiekills.length > 0 %>
+  <% @zombiekills.each do |result| %>
+  <tr>
+    <td><%= result[:name] %></td>
+    <td><%= result[:total_zombie_kills] %></td>
+  </tr>
+  <% end %>
+  <% end %>
+</table>
+</div>
